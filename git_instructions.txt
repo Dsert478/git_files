@@ -1,0 +1,126 @@
+##ANOTAÇÕES GERAIS (ELEMENTOS)
+-m		-> passar uma mensagem (vai criar o ponto com o nome)
+commit		-> envia arquivos para o git
+
+## INSTALAÇÃO DO GIT
+sudo apt-get update 
+sudo apt-get install git
+git config --global user.name "João Silva" 
+git config --global user.email "exemplo@seuemail.com.br"
+
+
+## INICIALIZAÇÃO E CONFIGURAÇÃO DO GIT
+git init
+touch landingpage.html
+git add landingpage.html				-> criou-se o ponto
+git commit -m "added landing page"			-> criou-se o ponto 
+
+git commit -am "update README"				-> levará uma alteração até o repositorio
+			
+git log							->mostra os pontos na historia do projeto
+corrigindo erros do git log -> git commit --allow-empty -m "first commit" -> retira o erro de arquivo vazio
+
+---------------------------------------------------
+		VERIFICAR MUDANÇAS FEITAS NO PROJETO
+Git add landingpage.html
+==//==
+
+
+###voltar o ponto!
+## encontre o numero do comit no git log
+git log
+git checkout -- "as98d7anumero do logsd76a" -- "nome_do_arquivo"
+
+git show "nome da chave"
+
+obs: git show 	-> mostrará o ultimo ponto na história 
+
+--------------------------------------------------
+alternativa
+## RAMIFICAÇÃO -- git branch			-> linha do tempo 
+
+master é o nome do projeto principal
+
+git branch feature/cart			-> cria um projeto paralelo (feature cart é o nome dado a branch)
+
+git branch -b feature/cart		-> cria uma branch já fazendo o checkout chamado feature/chart
+
+git checkout feature/cart		-> muda para a branch criada
+git status 	-> para verificar em qual branch está 
+
+touch cart.html
+
+git checkout master 	-> muda para o branch original (linha do tempo principal)
+git branch		-> mostra todas as linhas do tempo
+---------------------------------------------------
+## ADICIONANDO ARQUIVO NA LINHA DO TEMPO:
+git status		-> para ver os arquivos
+git add cart.html	-> verifique de está na linha do tempo correta
+git commit -m "added cart"	-> finalizar a inserção do arquivo
+
+
+git commit -a. "modified"		-> para adicionar e enviar para o repo remoto
+--------------------------------------------------
+## UNINDO LINHAS DO TEMPO
+git merge feature/cart		->no caso se unirá com a master
+--------------------------------------------------
+## DELETAR UMA LINHA DO TEMPO (FEATURE)
+git branch -D feature/cart
+-------------------------------------------------
+INFORMAÇÔES ADICIONAIS:
+
+git add .		-> adicionará tudo o que está na pasta
+------------------------------------------------
+
+##copiando repositório remoto para local (CLONADO UM PROJETO)
+#abra o github/ vá no projeto desejado / clique em CODE e copie o link que esta na aba
+git clone https://github.com/Dsert478/linkedinCrawler.git
+------------------------------------------------
+##passando os alterações feitas no GITHUB para o GIT (Remoto para local)
+git pull				-> puxar alterações feitas no repositorio remoto
+------------------------------------------------
+##RECUPERANDO INFORMAÇÕES (ARQUIVOS) DELETADAS
+
+#Se eu somente removi do repositorio local (Não criei o ponto em sí):
+git checkout -- "nome_do_arquivo"
+
+#Se eu acabei criando o ponto:
+git checkout "sa56d4numero_do_log 12uih3i12u" -- "nome_do_arquivo"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

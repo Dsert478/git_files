@@ -1,0 +1,31 @@
+## GITHUB
+-> Nada mais é do que um repositório remoto
+--//--
+create a new repository no site do github
+--//--
+
+## NO TERMINAL DO VSCODE - fazer a conexão com o repositório criado
+# -> link do repositorio (Conexão)
+git remote add origin https://github.com/Dsert478/aula-git1 	-> fez o link com o repositório remoto
+
+git remote -v 		-> ver os repositorios lincados no GitHub
+
+git push		-> irá jogar o repositório local para o online
+git push -u origin master		-> como é a primeira vez é preciso criar a branch 				master no repositorio online
+
+-------
+OBS: git remote add origin https://github.com/Dsert478/aula-git1 (adicionar.git no final)
+			
+git remote remove "myOrigin" 	-> remover alguma conexão remota
+------------------------------------------------
+
+##copiando repositório remoto para local
+#abra o github/ vá no projeto desejado / clique em CODE e copie o link que esta na aba
+git clone https://github.com/Dsert478/linkedinCrawler.git
+------------------------------------------------
+##passando os alterações feitas no GITHUB para o GIT (Remoto para local)
+git pull			-> puxar alterações feitas no repositorio remoto
+
+------------------------------------------------
+
+ 
