@@ -13,7 +13,8 @@ git config --global user.email "exemplo@seuemail.com.br"
 git init
 touch landingpage.html
 git add landingpage.html				-> criou-se o ponto
-git commit -m "added landing page"			-> criou-se o ponto 
+git commit -am "added landing page"			-> criou-se o ponto
+git push
 
 git commit -am "update README"				-> levará uma alteração até o repositorio
 			
@@ -86,41 +87,3 @@ git checkout -- "nome_do_arquivo"
 
 #Se eu acabei criando o ponto:
 git checkout "sa56d4numero_do_log 12uih3i12u" -- "nome_do_arquivo"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
